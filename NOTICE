@@ -1,0 +1,10 @@
+FCB-NFT
+=======
+
+This repository contains original FCB-NFT code together with components derived
+from the following open-source projects (Apache-2.0):
+
+  - DiffusionNFT  https://github.com/NVlabs/DiffusionNFT
+  - Flow-GRPO     https://github.com/yifan123/flow_grpo
+
+See LICENSE for the full Apache-2.0 text.

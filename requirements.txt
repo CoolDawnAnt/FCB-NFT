@@ -1,0 +1,36 @@
+# Tested with Python 3.10, CUDA 12.6. Install torch first with the CUDA wheel that
+# matches your driver, e.g.
+#   pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu126
+torch==2.6.0
+torchvision==0.21.0
+
+# diffusion / LoRA stack (pinned: SD3 pipeline + tokenizers compatibility)
+diffusers==0.33.1
+transformers==4.40.0
+tokenizers==0.19.1
+peft==0.10.0
+accelerate==1.4.0
+huggingface-hub==0.29.1
+sentencepiece
+protobuf==3.20.3
+
+# bargaining program
+cvxpy==1.7.5
+clarabel==0.11.1
+scs==3.2.11
+
+# reward models
+hpsv2x==1.2.0          # HPSv2.1 (checkpoint auto-downloaded from HF: xswu/HPSv2)
+open_clip_torch==3.3.0
+paddlepaddle-gpu==2.6.2  # OCR reward (PaddleOCR); CPU wheel `paddlepaddle` also works, slower
+paddleocr==2.9.1
+python-Levenshtein==0.27.3
+opencv-python-headless==4.11.0.86
+
+# misc
+numpy==1.26.4
+ml_collections
+absl-py
+wandb
+tqdm
+pillow==10.4.0

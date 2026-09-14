@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+
+# training / eval artifacts (not part of the release)
+logs/
+eval_results/
+wandb/
+*.pt
+*.pth
+*.ckpt
+
+# local editor / IDE
+.idea/
+.vscode/
+*.swp
